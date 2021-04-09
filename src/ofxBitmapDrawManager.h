@@ -13,10 +13,6 @@
 
 class ofxBitmapDrawManager{
 public:
-    vector<string> params;
-    vector<ofTexture> texes;
-
-
     template<typename T>
     void add(string name,T var){
         string tmp =name+" "+ofToString(var);
@@ -27,13 +23,10 @@ public:
     void draw();
     void Toggle_show();
     
-    
-    
 private:
     bool show = true;
+    vector<string> params;
+    vector<ofTexture> texes;
     
-    int num = 0;
-    int currentY = 0;
-
     
 };
